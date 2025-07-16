@@ -135,7 +135,7 @@ streamlit run app.py
 
 ## 👤 Author
 
-Built by [Your Name](https://linkedin.com/in/your-profile)
+Built by [Prajwal](https://linkedin.com/in/prajwalbijwe)
 
 ---
 
