@@ -8,10 +8,10 @@ This repository contains 4 real-time data engineering projects demonstrating exp
 
 | Project | Description |
 |--------|-------------|
-| [01. Real-Time User Interaction Pipeline](./01-user-interaction-pipeline/) | Simulates user activity in live video platforms and computes session-based analytics (viewers, chat, durations). |
-| [02. YouTube Comments Sentiment Pipeline](./02-youtube-sentiment-pipeline/) | Streams YouTube comments, applies Spark NLP sentiment detection, and visualizes trends. |
-| [03. Clickstream Recommender System](./03-clickstream-recommender/) | Builds a product recommender using ALS trained on real-time clickstream data (sessions + items). |
-| [04. Streaming Log Analytics](./04-streaming-log-analytics/) | Ingests GitHub public event logs to detect activity, errors, and top repositories in real-time. |
+| [01. Real-Time User Interaction Pipeline](https://github.com/prajwalbijwe/Data-Engineering-Projects/tree/main/Real%20Time%20User%20Interaction%20Pipeline) | Simulates user activity in live video platforms and computes session-based analytics (viewers, chat, durations). |
+| [02. YouTube Comments Sentiment Pipeline](https://github.com/prajwalbijwe/Data-Engineering-Projects/tree/main/Youtube%20Sentiment%20Analytics%20Pileline) | Streams YouTube comments, applies Spark NLP sentiment detection, and visualizes trends. |
+| [03. Clickstream Recommender System](https://github.com/prajwalbijwe/Data-Engineering-Projects/tree/main/Clickstream%20Recommender%20System) | Builds a product recommender using ALS trained on real-time clickstream data (sessions + items). |
+| [04. Streaming Log Analytics](https://github.com/prajwalbijwe/Data-Engineering-Projects/tree/main/Github%20Log%20Analytics) | Ingests GitHub public event logs to detect activity, errors, and top repositories in real-time. |
 
 ---
 
@@ -82,7 +82,7 @@ Repeat for other projects similarly.
 
 ## 👤 Author
 
-Built by [Your Name](https://linkedin.com/in/your-profile) · MIT License
+Built by [Prajwal Bijwe](https://linkedin.com/in/prajwalbijwe)
 
 ---
 
