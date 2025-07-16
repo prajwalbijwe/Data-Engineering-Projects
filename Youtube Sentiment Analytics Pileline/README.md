@@ -135,12 +135,12 @@ streamlit run app.py
 
 ## 👤 Author
 
-Built by [Prajwal](https://linkedin.com/in/prajwalbijwe)
+Built by [Prajwal Bijwe](https://linkedin.com/in/prajwalbijwe)
 
 ---
 
 ## 📁 Related Projects
 
-- [01: Real-Time User Interaction Pipeline](../01-user-interaction-pipeline/)
-- [03: Clickstream Recommender System](../03-clickstream-recommender/)
-- [04: Streaming Log Analytics](../04-streaming-log-analytics/)
+- [01: Real-Time User Interaction Pipeline](https://github.com/prajwalbijwe/Data-Engineering-Projects/tree/main/Real%20Time%20User%20Interaction%20Pipeline)
+- [03: Clickstream Recommender System](https://github.com/prajwalbijwe/Data-Engineering-Projects/tree/main/Clickstream%20Recommender%20System)
+- [04: Streaming Log Analytics](https://github.com/prajwalbijwe/Data-Engineering-Projects/tree/main/Github%20Log%20Analytics)
