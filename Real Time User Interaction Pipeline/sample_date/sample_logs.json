@@ -1,0 +1,7 @@
+{
+  "timestamp": "2025-07-13T12:30:20Z",
+  "event": "message",
+  "user_id": "user_33",
+  "video_id": "video_42",
+  "payload": "awesome stream!"
+}
