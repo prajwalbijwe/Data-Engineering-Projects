@@ -134,4 +134,4 @@ Built by [Prajwal Bijwe](https://linkedin.com/in/prajwalbijwe)
 
 - [01: Real-Time User Interaction Pipeline](../01-user-interaction-pipeline/)
 - [02: YouTube Comments Sentiment Pipeline](../02-youtube-sentiment-pipeline/)
-- [03: Clickstream Recommender System](../03-clickstream-recommender/)
+- [03: Clickstream Recommender System]([../03-clickstream-recommender/](https://github.com/prajwalbijwe/Data-Engineering-Projects/blob/main/Clickstream%20Recommender%20System/README.md))
