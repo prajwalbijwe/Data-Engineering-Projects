@@ -1,25 +1,107 @@
-Pipeline Flow
-User interaction logs (messages, viewers, joins, exits) are simulated using a local Kafka producer and streamed to a topic in Confluent Kafka.
+# 📡 Real-Time User Interaction Pipeline
 
-Databricks notebooks read from Kafka and store the raw logs to the Bronze layer in Azure Data Lake using Delta format.
-The logs are parsed and cleaned in the Silver layer, standardizing time and event format.
+This project demonstrates a real-time data engineering pipeline that captures user interactions during live streams and processes them using Kafka, Spark Structured Streaming, and Azure Data Lake. The pipeline ends with a dashboard powered by Streamlit.
 
-In the Gold layer, data is aggregated to calculate:
-Active users per hour
-Peak viewers
-Event type distribution
-Session duration and frequency
+---
 
-A Streamlit dashboard visualizes this data using real-time queries against Azure Blob (via SAS token).
-Spark Streaming on Databricks
-Run these in Databricks notebook jobs (or .py scripts):
+## ⚙️ Tech Stack
 
-bronze_layer.py → Ingests raw JSON from Kafka
-silver_layer.py → Parses, filters, and standardizes logs
-gold_layer.py → Aggregates by time, user, session
+| Layer         | Tool/Service                             |
+|---------------|------------------------------------------|
+| Ingestion     | Python Producer → Kafka (Confluent Cloud)|
+| Processing    | Spark Structured Streaming on Databricks |
+| Storage       | Azure Data Lake Gen2 (Delta format)      |
+| Visualization | Streamlit (local)                        |
 
+---
 
-Sample Schema (Bronze Parsed)
+## 🧱 Project Structure
+
+```
+01-user-interaction-pipeline/
+├── producer/
+│   └── user_interaction_producer.py
+├── databricks/
+│   ├── bronze_layer.py
+│   ├── silver_layer.py
+│   └── gold_layer.py
+├── streamlit_dashboard/
+│   └── app.py
+├── architecture/
+│   ├── architecture_diagram.png
+│   └── flow.md
+├── sample_data/
+│   └── sample_logs.json
+├── requirements.txt
+└── README.md
+```
+
+---
+
+## 📊 Features
+
+- Real-time ingestion using Kafka
+- Structured ETL layers: Bronze → Silver → Gold
+- Aggregated metrics: session duration, viewer count, event type
+- Live dashboard using Streamlit
+- Secure data access via Azure SAS token
+
+---
+
+## 🧭 Architecture
+
+![Architecture Diagram](architecture/architecture_diagram.png)
+
+---
+
+## 🔄 Pipeline Flow
+
+1. Python script produces user event logs to Kafka
+2. Databricks reads Kafka → Bronze (Delta)
+3. Parsed and cleaned data stored in Silver
+4. Aggregated metrics written to Gold
+5. Streamlit queries Azure Blob to render real-time dashboard
+
+---
+
+## 🔐 Authentication
+
+| Component   | Access Method           |
+|------------|--------------------------|
+| Kafka       | SASL_SSL + API key/secret |
+| Azure Blob  | SAS Token URL-based auth |
+| Databricks  | Workspace-connected notebooks |
+
+---
+
+## 🧪 How to Run
+
+### 1. Start Kafka Producer
+
+```bash
+cd producer/
+python user_interaction_producer.py
+```
+
+### 2. Run Databricks Notebooks
+
+Execute:
+- `bronze_layer.py`
+- `silver_layer.py`
+- `gold_layer.py`
+
+### 3. Run Streamlit App
+
+```bash
+cd streamlit_dashboard/
+streamlit run app.py
+```
+
+---
+
+## 📌 Example Log Format
+
+```json
 {
   "timestamp": "2025-07-13T12:30:20Z",
   "event": "message",
@@ -27,23 +109,28 @@ Sample Schema (Bronze Parsed)
   "video_id": "video_42",
   "payload": "awesome stream!"
 }
+```
 
+---
 
-Auth & Connectivity
-Azure Blob (ADLS)	--> SAS Token (secure URI)
-Kafka (Confluent)	--> SASL_SSL with API key/secret
-Databricks	      --> Workspace notebooks
+## ✅ Output Metrics
 
+| Table             | Metrics Included                            |
+|------------------|---------------------------------------------|
+| `events_by_type` | Count of each event type per time window    |
+| `user_sessions`  | Session length and event volume per user    |
+| `video_activity` | Active viewers and peak message counts      |
 
-Features
-✅ Structured Bronze → Silver → Gold pipeline
-✅ Real-time streaming via Spark
-✅ Modular Python + notebook-based development
-✅ Live dashboard, powered by cloud-native storage
-✅ Clean GitHub-friendly structure for deployment/showcase
+---
 
+## 👤 Author
 
-Next Steps
- Add GitHub Actions CI for Streamlit lint/test
- Package dashboard as a Docker container
- Enable alerts via Slack (Airflow or Prometheus integration)
+Built by [Your Name](https://linkedin.com/in/your-profile)
+
+---
+
+## 📁 Other Projects
+
+- [02: YouTube Comments Sentiment Pipeline](../02-youtube-sentiment-pipeline/)
+- [03: Clickstream Recommender System](../03-clickstream-recommender/)
+- [04: Streaming Log Analytics](../04-streaming-log-analytics/)
