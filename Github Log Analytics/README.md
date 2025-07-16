@@ -132,6 +132,6 @@ Built by [Prajwal Bijwe](https://linkedin.com/in/prajwalbijwe)
 
 ## 📁 Related Projects
 
-- [01: Real-Time User Interaction Pipeline](../01-user-interaction-pipeline/)
-- [02: YouTube Comments Sentiment Pipeline](../02-youtube-sentiment-pipeline/)
+- [01: Real-Time User Interaction Pipeline]([../01-user-interaction-pipeline/](https://github.com/prajwalbijwe/Data-Engineering-Projects/tree/main/Real%20Time%20User%20Interaction%20Pipeline))
+- [02: YouTube Comments Sentiment Pipeline]([../02-youtube-sentiment-pipeline/](https://github.com/prajwalbijwe/Data-Engineering-Projects/tree/main/Youtube%20Sentiment%20Analytics%20Pileline))
 - [03: Clickstream Recommender System]([../03-clickstream-recommender/](https://github.com/prajwalbijwe/Data-Engineering-Projects/blob/main/Clickstream%20Recommender%20System/README.md))
