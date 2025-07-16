@@ -133,4 +133,4 @@ Built by [Prajwal Bijwe](https://linkedin.com/in/prajwalbijwe)
 
 - [01: Real-Time User Interaction Pipeline](../01-user-interaction-pipeline/)
 - [02: YouTube Sentiment Pipeline](../02-youtube-sentiment-pipeline/)
-- [04: Streaming Log Analytics](../04-streaming-log-analytics/)
+- [04: Streaming Log Analytics]([../04-streaming-log-analytics/](https://github.com/prajwalbijwe/Data-Engineering-Projects/tree/main/Github%20Log%20Analytics))
