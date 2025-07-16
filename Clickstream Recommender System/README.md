@@ -131,6 +131,6 @@ Built by [Prajwal Bijwe](https://linkedin.com/in/prajwalbijwe)
 
 ## 📁 Related Projects
 
-- [01: Real-Time User Interaction Pipeline](../01-user-interaction-pipeline/)
-- [02: YouTube Sentiment Pipeline](../02-youtube-sentiment-pipeline/)
-- [04: Streaming Log Analytics]([../04-streaming-log-analytics/](https://github.com/prajwalbijwe/Data-Engineering-Projects/tree/main/Github%20Log%20Analytics))
+- [01: Real-Time User Interaction Pipeline](https://github.com/prajwalbijwe/Data-Engineering-Projects/tree/main/Real%20Time%20User%20Interaction%20Pipeline)
+- [02: YouTube Sentiment Pipeline](https://github.com/prajwalbijwe/Data-Engineering-Projects/tree/main/Youtube%20Sentiment%20Analytics%20Pileline)
+- [04: Streaming Log Analytics](https://github.com/prajwalbijwe/Data-Engineering-Projects/tree/main/Github%20Log%20Analytics)
