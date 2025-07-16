@@ -131,6 +131,6 @@ Built by [Prajwal Bijwe](https://linkedin.com/in/prajwalbijwe)
 
 ## 📁 Other Projects
 
-- [02: YouTube Comments Sentiment Pipeline](../02-youtube-sentiment-pipeline/)
-- [03: Clickstream Recommender System](../03-clickstream-recommender/)
-- [04: Streaming Log Analytics](../04-streaming-log-analytics/)
+- [02: YouTube Comments Sentiment Pipeline](https://github.com/prajwalbijwe/Data-Engineering-Projects/tree/main/Youtube%20Sentiment%20Analytics%20Pileline)
+- [03: Clickstream Recommender System](https://github.com/prajwalbijwe/Data-Engineering-Projects/tree/main/Clickstream%20Recommender%20System)
+- [04: Streaming Log Analytics](https://github.com/prajwalbijwe/Data-Engineering-Projects/tree/main/Github%20Log%20Analytics)
